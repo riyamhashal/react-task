@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "GO AIR",
+    "logo": "goairr.jpeg",
+    "date": "4th - 7th 2022",
+    "size": "3600 Crores",
+    "price": "50-60",
+    "lots": "100 Shares/5 Lots"
+  },
+  {
+    "id": 2,
+    "name": "BAJAJ ENERGY",
+    "logo": "bajaj-logo.png",
+    "date": "4th - 7th 2022",
+    "size": "3600 Crores",
+    "price": "50-60",
+    "lots": "100 Shares/5 Lots"
+  },
+  {
+    "id": 3,
+    "name": "OYO",
+    "logo": "logo.png",
+    "date": "To be announced",
+    "size": "3600 Crores",
+    "price": "50-60",
+    "lots": "100 Shares/5 Lots"
+  }
+]
+
