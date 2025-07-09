@@ -78,6 +78,7 @@ const IPODetailPage = () => {
           <div className="ipo-timeline">
             <div className="timeline-step">
               <div className="tick">✔</div>
+              
               <p style={{fontWeight:"bold",fontSize:"15px"}}>
                 Bidding starts
                 <br />
@@ -131,31 +132,14 @@ const IPODetailPage = () => {
           <p>
             Lorem ipsum dolor sit amet. Ea reprehenderit quia cum consequatur
             deleniti rem odio enim sit corporis g aliasum est quisquam magni ea
-            sequi maxime. Aut incidunt adipisci in fuga necessitatibus aut
-            inventore enim. libero porro rerum asperiores ea neque
-            voluptatem quae tenetur laborum inventore blanditiis nisi? Quo,
-            placeat commodi maiores fugit natus quae eaque! Tenetur neque, nam,
-            aliquid accusantium aspernatur ducimus, illo ea et quos at
-            architecto repudiandae quia voluptate quisquam laboriosam.
+            aliquid accusantium aspernatur ducimus, illo ea et quos at.
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus,
             necessitatibus vero! Magnam accusantium, aspernatur quia laboriosam
-            a fuga corporis adipisci enim repellat rerum suscipit accusamus
-            deleniti at ea iste error, odit minima numquam sunt omnis cumque ut
-            consequatur quaerat nulla? Ex magni ipsa sequi! Numquam aliquid nemo
-            iure voluptatibus! Repellendus aspernatur, sequi porro consequatur
-            aliquid expedita reprehenderit eligendi! Minima tenetur provident
-            nemo hic, accusantium recusandae autem ex distinctio nesciunt cum
-            voluptatum inventore. Doloribus vitae soluta officiis cupiditate
-            accusamus similique velit, libero porro rerum asperiores ea neque
-            voluptatem quae tenetur laborum inventore blanditiis nisi? Quo,
-            placeat commodi maiores fugit natus quae eaque! Tenetur neque, nam,
-            aliquid accusantium aspernatur ducimus, illo ea et quos at
-            architecto repudiandae quia voluptate quisquam laboriosam.
-            Voluptates ipsa iusto porro expedita nulla deserunt voluptatem dolor
+            aliquid accusantium aspernatur ducimus,  voluptatem dolor
             nam sunt culpa ab perspiciatis ullam accusamus modi, dicta inventore
-            neque doloremque provident est unde, magni, perferendis ut iure?
+            neque doloremque provident est unde, magni, perferendis ut iure? <span style={{color:"#EC5800",textDecoration:"underline", cursor: "pointer"}}>Read more.</span>
           </p>
         </div>
       </div>

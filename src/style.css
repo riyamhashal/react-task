@@ -1,3 +1,6 @@
+*{
+  font-family: sora;
+}
 .list-container {
   padding: 20px;
 }
@@ -8,14 +11,26 @@ table {
 }
 
 th {
+  height: 40px;
   background-color: #f2f2f2;
   text-align: left;
   color: rgb(176, 172, 172);
+  font-size: 25px;
+  /* font-weight: 100; */
+}
+.range{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+  font-weight: bold;
 }
 
 
+/* IPODetail.css */
 
-/* IPOPage.css */
+
 .ipo-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -129,13 +144,13 @@ th {
 }
 
 .timeline-step p {
-  font-size: 12px;
+  
   text-align: center;
   margin: 0;
 }
 
 .timeline-step span {
-  font-weight: bold;
+  
   font-size: 12px;
 }
 
@@ -149,6 +164,11 @@ th {
   align-items: center;
   justify-content: center;
   margin: 0 auto 0.5rem auto;
+}
+.line {
+  height: 2px;
+  width:  40px;
+  background-color: gray;
 }
 
 .about-company {
