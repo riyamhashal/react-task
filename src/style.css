@@ -1,4 +1,4 @@
-*{
+* {
   font-family: sora;
 }
 .list-container {
@@ -15,10 +15,14 @@ th {
   background-color: #f2f2f2;
   text-align: left;
   color: rgb(176, 172, 172);
-  font-size: 25px;
-  /* font-weight: 100; */
+  font-size: 15px;
+  font-weight: 100;
 }
-.range{
+.cell{
+  padding: 15px 10px;
+  vertical-align: top;
+}
+.range {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -27,14 +31,19 @@ th {
   font-weight: bold;
 }
 
-
 /* IPODetail.css */
-
-
+.ipo-container.no-border {
+  border: none !important;
+  box-shadow: none; 
+}
 .ipo-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   font-family: Sora;
 }
 
@@ -42,24 +51,25 @@ th {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
+  padding: 1rem;
 }
 
 .back-button {
-  height: 40px;
-  width: 40px;
-  background: none;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1.5rem;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 20%;
+  padding: 8px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   cursor: pointer;
 }
 
 .company-info {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 12px;
+  flex-grow: 1;
+  margin-left: 1rem;
 }
 
 .company-logo {
@@ -67,113 +77,148 @@ th {
   height: 50px;
   border-radius: 50%;
 }
-
+.text-info{
+  display: flex;
+  flex-direction: column;
+}
 .company-name {
   margin: 0;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .company-sub {
-  font-size: 0.85rem;
+  font-size: 14px;
   color: #666;
 }
-.download{
-    font-size: 30px;
-    cursor: pointer;
+.download {
+  font-size: 22px;
+  color: #4b5563;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .apply-button {
   background-color: #000033;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 10px 20px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  border: 1px solid black;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ipo-box {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: white;
 }
 .ipo-container {
-  margin: auto ;
-  padding:  20px;
-  font-family: sans-serif;
+  margin: auto;
+  padding: 20px;
   color: #333;
 }
 
 .ipo-details-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  background: #f9f9f9;
   margin-bottom: 30px;
 }
 
-.ipo-details-box div {
+.ipo-details-box div span {
   font-size: 14px;
+}
+.ipo-details-box div strong {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .loss {
   color: red;
   font-weight: bold;
 }
-
 .ipo-timeline {
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 12px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
-  padding: 10px 0;
+  padding: 30px 20px;
+  background: #fff;
+  position: relative;
 }
 
 .timeline-step {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100px;
+  position: relative;
+  flex: 1;
+  min-width: 120px;
 }
+
+.tick-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ipo-timeline::before {
+  content: "";
+  position: absolute;
+  top: 44px; 
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e0e0e0;
+  
+}
+
+.timeline-step:not(:last-child) .tick-line::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 120px;
+  background-color: #22c55e;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
 
 .tick {
-  background-color: #2ecc71;
+  background-color: #22c55e;
   color: white;
   font-size: 16px;
-  border-radius: 50%;
-  padding: 10px;
-  margin-bottom: 5px;
-}
-
-.timeline-step p {
-  
-  text-align: center;
-  margin: 0;
-}
-
-.timeline-step span {
-  
-  font-size: 12px;
-}
-
-.circle-check {
-  background: green;
-  color: white;
   border-radius: 50%;
   width: 30px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 0.5rem auto;
-}
-.line {
-  height: 2px;
-  width:  40px;
-  background-color: gray;
+  z-index: 1;
 }
 
+.timeline-step p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.timeline-step span {
+  font-weight: 500;
+  font-size: 13px;
+  color: gray;
+}
 .about-company {
   margin-top: 2rem;
-  background: #f8f8f8;
+  border: 1px solid #ccc;
   padding: 1rem;
   border-radius: 12px;
 }
@@ -191,7 +236,7 @@ th {
     flex-direction: column;
     align-items: flex-start;
   }
-   .download {
+  .download {
     width: 100%;
     text-align: center;
     margin-top: 0.5rem;

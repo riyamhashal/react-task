@@ -6,7 +6,7 @@ const IPOList = () => {
   return (
     <div>
       <h1>IPO list page</h1>
-      <table border="0" cellPadding="10">
+      <table border="0" cellPadding="10" borderCollapse="collapse">
         <thead>
           <tr>
             <th>Company/ Issue date</th>
@@ -17,42 +17,51 @@ const IPOList = () => {
         </thead>
         <tbody>
           {data.map((item) => (
-            <tr key={item.id}>
+            <tr
+              key={item.id}
+              style={{
+                borderBottom: "1px solid #eee", 
+              }}
+            >
               <td>
                 <Link
                   style={{ color: "gray", textDecoration: "none" }}
                   to={`/ipo/${item.id}`}
                 >
-                  <td>
-                    <div
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "10px",
+                    }}
+                  >
+                    <img
+                      src={`/images/${item.logo}`}
+                      alt={item.name}
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "10px",
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
                       }}
-                    >
-                      <img
-                        src={`/images/${item.logo}`}
-                        alt={item.name}
+                    />
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                      <span
                         style={{
-                          width: "40px",
-                          height: "40px",
-                          borderRadius: "50%",
+                          fontWeight: "bold",
+                          fontSize: "16px",
+                          color: "black",
                         }}
-                      />
-                      <div style={{ display: "flex", flexDirection: "column" }}>
-                        <span style={{ fontWeight: "bold", fontSize: "16px" ,color:"black"}}>
-                          {item.name}
-                        </span>
-                        <span style={{ color: "gray", fontSize: "14px" }}>
-                          {item.date}
-                        </span>
-                      </div>
+                      >
+                        {item.name}
+                      </span>
+                      <span style={{ color: "gray", fontSize: "14px" }}>
+                        {item.date}
+                      </span>
                     </div>
-                  </td>
+                  </div>
                 </Link>
               </td>
-              <td>
+              <td className="cell">
                 <strong>₹{item.size}</strong>
               </td>
               <td>
