@@ -147,7 +147,7 @@ th {
   border-radius: 12px;
   display: flex;
   justify-content: space-between;
-  padding: 30px 20px;
+  flex-wrap: wrap;
   background: #fff;
   position: relative;
 }
@@ -159,6 +159,7 @@ th {
   position: relative;
   flex: 1;
   min-width: 120px;
+  margin-bottom: 20px;
 }
 
 .tick-line {
@@ -170,7 +171,7 @@ th {
 .ipo-timeline::before {
   content: "";
   position: absolute;
-  top: 44px; 
+  top: 16px; 
   left: 0;
   right: 0;
   height: 1px;
@@ -230,11 +231,24 @@ th {
 @media (max-width: 768px) {
   .ipo-details {
     flex-direction: column;
+    align-items: center;
   }
 
   .ipo-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .ipo-timeline::before {
+    display: none; 
+  }
+
+  .timeline-step:not(:last-child) .tick-line::after {
+    display: none; 
+  }
+  .timeline-step {
+    min-width: auto;
+    width: 100%;
+    max-width: 250px;
   }
   .download {
     width: 100%;
