@@ -23,7 +23,7 @@ const IPODetailPage = () => {
               <span className="company-sub">OYO Private Limited</span>
             </div>
           </div>
-          <span className="download">
+          <span className="download svg">
             <RiFileDownloadLine />
           </span>
           <button className="apply-button">Apply now</button>
@@ -35,17 +35,17 @@ const IPODetailPage = () => {
             <div>
               <span style={{ color: "gray" }}>Issue size</span>
               <br />
-              <strong>₹3,600 – 3,700 Cr.</strong>
+              <strong> <span style={{fontSize:"18px"}}>₹</span>3,600 – 3,700 Cr.</strong>
             </div>
             <div>
               <span style={{ color: "gray" }}>Price range</span>
               <br />
-              <strong>₹100 - 200</strong>
+              <strong> <span style={{fontSize:"18px"}}>₹</span>100 - 200</strong>
             </div>
             <div>
               <span style={{ color: "gray" }}>Minimum amount</span>
               <br />
-              <strong>₹50,000</strong>
+              <strong> <span style={{fontSize:"18px"}}>₹</span>50,000</strong>
             </div>
             <div>
               <span style={{ color: "gray" }}>Lot size</span>
@@ -65,12 +65,12 @@ const IPODetailPage = () => {
             <div>
               <span style={{ color: "gray" }}>Listed price</span>
               <br />
-              <strong>₹150</strong>
+              <strong> <span style={{fontSize:"18px"}}>₹</span>150</strong>
             </div>
             <div>
               <span style={{ color: "gray" }}>Listing gains</span>
               <br />
-              <span className="loss">₹10 (10.0%)</span>
+              <strong> <span style={{fontSize:"18px"}}>₹</span>10 <span className="loss">(10.0%)</span></strong>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ const IPODetailPage = () => {
                 <div className="tick">✔</div>
               </div>
               <p>
-                Bidding starts
+                Bidding <br /> starts
                 <br />
                 <span>12 Dec 2023</span>
               </p>
@@ -93,7 +93,7 @@ const IPODetailPage = () => {
                 <div className="tick">✔</div>
               </div>
               <p>
-                Bidding ends
+                Bidding <br /> ends
                 <br />
                 <span>15 Dec 2023</span>
               </p>
@@ -104,7 +104,7 @@ const IPODetailPage = () => {
                 <div className="tick">✔</div>
               </div>
               <p>
-                Allotment finalization
+                Allotment <br /> finalization
                 <br />
                 <span>18 Dec 2023</span>
               </p>
@@ -115,7 +115,7 @@ const IPODetailPage = () => {
                 <div className="tick">✔</div>
               </div>
               <p>
-                Refund initiation
+                Refund <br /> initiation
                 <br />
                 <span>18 Dec 2023</span>
               </p>
@@ -126,7 +126,7 @@ const IPODetailPage = () => {
                 <div className="tick">✔</div>
               </div>
               <p>
-                Demat transfer
+                Demat <br /> transfer
                 <br />
                 <span>18 Dec 2023</span>
               </p>
@@ -137,7 +137,7 @@ const IPODetailPage = () => {
                 <div className="tick">✔</div>
               </div>
               <p>
-                Listing date
+                Listing <br /> date
                 <br />
                 <span>21 Dec 2023</span>
               </p>
@@ -146,7 +146,7 @@ const IPODetailPage = () => {
         </div>
 
         <div className="about-company">
-          <h3>OYO Private Limited</h3>
+          <h3>About the company</h3>
           <p style={{color:'gray'}}>
             Lorem ipsum dolor sit amet. Ea reprehenderit quia cum consequatur
             deleniti rem odio enim sit corporis g aliasum est quisquam magni ea

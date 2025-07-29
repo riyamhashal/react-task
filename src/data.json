@@ -6,6 +6,7 @@
     "date": "4th - 7th 2022",
     "size": "3600 Crores",
     "price": "50-60",
+    "shares": "50,000",
     "lots": "100 Shares/5 Lots"
   },
   {
@@ -15,6 +16,7 @@
     "date": "4th - 7th 2022",
     "size": "3600 Crores",
     "price": "50-60",
+    "shares": "50,000",
     "lots": "100 Shares/5 Lots"
   },
   {
@@ -24,6 +26,7 @@
     "date": "To be announced",
     "size": "3600 Crores",
     "price": "50-60",
+    "shares": "50,000",
     "lots": "100 Shares/5 Lots"
   }
 ]
