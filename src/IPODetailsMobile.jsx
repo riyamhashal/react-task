@@ -57,17 +57,17 @@ const IPODetailPage = () => {
               <br />
               <strong>12 Dec - 15 Dec 22</strong>
             </div>
-            <div className="hide-on-mobile">
+            <div>
               <span style={{ color: "gray" }}>Listed on</span>
               <br />
               <strong>15 Dec 22</strong>
             </div>
-            <div className="hide-on-mobile">
+            <div>
               <span style={{ color: "gray" }}>Listed price</span>
               <br />
               <strong> <span style={{fontSize:"18px"}}>₹</span>150</strong>
             </div>
-            <div className="hide-on-mobile">
+            <div>
               <span style={{ color: "gray" }}>Listing gains</span>
               <br />
               <strong> <span style={{fontSize:"18px"}}>₹</span>10 <span className="loss">(10.0%)</span></strong>
@@ -82,7 +82,7 @@ const IPODetailPage = () => {
                 <div className="tick">✔</div>
               </div>
               <p>
-                Bidding <br className="mobile-hide-br" /> starts
+                Bidding <br /> starts
                 <br />
                 <span>12 Dec 2023</span>
               </p>
@@ -93,7 +93,7 @@ const IPODetailPage = () => {
                 <div className="tick">✔</div>
               </div>
               <p>
-                Bidding <br className="mobile-hide-br"/> ends
+                Bidding <br /> ends
                 <br />
                 <span>15 Dec 2023</span>
               </p>
@@ -104,7 +104,7 @@ const IPODetailPage = () => {
                 <div className="tick">✔</div>
               </div>
               <p>
-                Allotment <br className="mobile-hide-br"/> finalization
+                Allotment <br /> finalization
                 <br />
                 <span>18 Dec 2023</span>
               </p>
@@ -115,7 +115,7 @@ const IPODetailPage = () => {
                 <div className="tick">✔</div>
               </div>
               <p>
-                Refund <br className="mobile-hide-br" /> initiation
+                Refund <br /> initiation
                 <br />
                 <span>18 Dec 2023</span>
               </p>
@@ -126,7 +126,7 @@ const IPODetailPage = () => {
                 <div className="tick">✔</div>
               </div>
               <p>
-                Demat <br className="mobile-hide-br"/> transfer
+                Demat <br /> transfer
                 <br />
                 <span>18 Dec 2023</span>
               </p>
@@ -137,7 +137,7 @@ const IPODetailPage = () => {
                 <div className="tick">✔</div>
               </div>
               <p>
-                Listing <br className="mobile-hide-br" /> date
+                Listing <br /> date
                 <br />
                 <span>21 Dec 2023</span>
               </p>
