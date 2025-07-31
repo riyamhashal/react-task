@@ -202,7 +202,6 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* z-index: 1; */
 }
 
 .timeline-step p {
@@ -261,8 +260,8 @@ td {
   }
   .ipo-details-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* two columns */
-    gap: 16px 24px;                         /* spacing between rows and cols */
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 16px 24px;                         
     padding: 16px;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
@@ -304,7 +303,7 @@ td {
   .timeline-step:not(:last-child)::after {
     content: "";
     position: absolute;
-    left: 9px;
+    left: 14px;
     top: 23px;
     bottom: -20px;
     width: 2px;
@@ -313,8 +312,8 @@ td {
   }
 
   .tick-line {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #d1d5db;
     color: transparent;
@@ -328,10 +327,12 @@ td {
     font-size: 16px;
   }
   .ipo-timeline .timeline-step .tick {
-    background-color: #ccc; /* gray by default on mobile */
+    background-color: #ccc; 
     color: #ccc;
   }
   .tick {
+    width: 30px;
+    height: 30px;
     font-size: 16px;
     font-weight: bold;
     z-index: 2;
@@ -344,7 +345,8 @@ td {
     z-index: 2;
   }
   .ipo-timeline .timeline-step:nth-child(1) .tick {
-    background-color: #00c853; /* green only for first step */
+    background-color: #00c853; 
+    
   }
 
   .timeline-step p {
