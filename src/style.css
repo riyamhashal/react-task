@@ -306,7 +306,7 @@ td {
     left: 14px;
     top: 23px;
     bottom: -20px;
-    width: 2px;
+    width: 1px;
     background-color: #d1d5db;
     z-index: 0;
   }
@@ -350,7 +350,7 @@ td {
   }
 
   .timeline-step p {
-    margin: -5px 6px;
+    margin: 1px 6px;
     font-size: 14px;
     font-weight: 800;
     text-align: left;
